@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>College Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://crescent.education/wp-content/uploads/2022/02/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h2>Crescent College</h2>
+        <h2>Attendance Management System</h2>
+        
+        <br>
+        
+        <h3></b>Add Student</b></h3><br>
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="text" id="studentID" placeholder="Student ID">
+        <input type="text" id="studentDegree" placeholder="Degree">
+        <input type="text" id="courseID" placeholder="Course ID">
+        <input type="text" id="courseName" placeholder="Course Name">
+        <button class="add-btn" onclick="addStudent()">Add Student</button>
+
+        <br><br><br>
+
+        <h3><b>Mark Attendance</b></h3><br>
+        <select id="attStudentID">
+            <option value="">Select Student ID</option>
+        </select>
+        <select id="attCourseID">
+            <option value="">Select Course ID</option>
+        </select>
+        <button class="mark-btn" onclick="markAttendance('yes')">Present</button>
+        <button class="mark-btn" onclick="markAttendance('no')">Absent</button>
+
+        <br><br><br>
+
+        <h3></b>Attendance Records</b></h3>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Total Classes</th>
+                    <th>Present</th>
+                    <th>Attendance (%)</th>
+                </tr>
+            </thead>
+            <tbody id="attendance-list"></tbody>
+        </table>
+        <button class="reset-btn" onclick="resetAttendance()">Reset Attendance</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

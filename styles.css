@@ -1,0 +1,99 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://www.crescentschoolofarchitecture.com/admin/uploads/606231734abdur.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.989);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.793);
+    max-width: 400px;
+}
+
+.logo {
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 20px;    
+}
+
+.captcha-code {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+.sign-in-btn {
+    width: 90%;
+    background: #001147;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #003d47;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.play-store {
+    width: 120px;
+}
+
+.qr-code {
+    width: 50px;
+}
